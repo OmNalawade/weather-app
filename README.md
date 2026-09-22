@@ -208,8 +208,3 @@ Computer Science & Engineering Student
 📄 License
 
 This project is created for learning, development, and portfolio purposes.
-
-
-> Real weather API integration has NOT been done yet
-
-Your current project **does use live OpenWeather data**, so that statement is outdated.
