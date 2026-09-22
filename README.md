@@ -93,40 +93,48 @@ Forecast         Hourly Data
      Weather Visualization
             ↓
       Interactive Map
-🌦️ Weather Data
+```
 
-Atmos uses the OpenWeather API to provide live weather information.
+---
 
-Data	Description
-Temperature	Current temperature
-Weather Condition	Current weather state
-High / Low	Daily temperature range
-Feels Like	Perceived temperature
-Humidity	Current humidity
-Wind	Speed and direction
-Pressure	Atmospheric pressure
-Forecast	Upcoming daily weather
-Hourly Data	Upcoming hourly conditions
+## 🌦️ Weather Data
+
+Atmos uses the **OpenWeather API** to provide live weather information.
+
+| **Data** | **Description** |
+|---|---|
+| Temperature | Current temperature |
+| Weather Condition | Current weather state |
+| High / Low | Daily temperature range |
+| Feels Like | Perceived temperature |
+| Humidity | Current humidity |
+| Wind | Speed and direction |
+| Pressure | Atmospheric pressure |
+| Forecast | Upcoming daily weather |
+| Hourly Data | Upcoming hourly conditions |
 
 Weather icons and visual conditions dynamically respond to the weather data returned by the API.
 
-🗺️ Location & Map Integration
+---
 
-Atmos integrates Google Maps to provide an interactive geographic experience.
+## 🗺️ Location & Map Integration
 
-Google Maps Integration
-Interactive map interface
-Location visualization
-Map-based weather experience
-Browser-compatible map rendering
-API key configured through environment variables
+Atmos integrates **Google Maps** to provide an interactive geographic experience.
 
-The application combines weather information with geographic visualization to provide a more complete location-based weather experience.
+### Google Maps Integration
 
-🌓 Theme System
+- **Interactive Map** — Users can explore locations through the map interface
+- **Location Visualization** — Provides a geographic view alongside weather information
+- **Map Integration** — Connects the weather experience with geographic data
+- **API Configuration** — Google Maps API key is securely configured through environment variables
+
+---
+
+## 🌓 Theme System
 
 Atmos supports both dark and light themes.
 
+```text
 Dark Mode
     ↓
 Atmospheric Weather Interface
@@ -134,23 +142,33 @@ Atmospheric Weather Interface
 Light Mode
     ↓
 Clean Weather Interface
+```
 
-The selected theme is persisted using browser localStorage, allowing the user's preference to remain after refreshing the application.
+The selected theme is persisted using browser `localStorage`, allowing the user's preference to remain after refreshing the application.
 
-🛠️ Tech Stack
-Layer	Technology
-Frontend	React 19
-Build Tool	Vite
-Language	JavaScript
-Styling	CSS
-Icons	Lucide React
-Weather API	OpenWeather API
-Maps	Google Maps JavaScript API
-Routing	React Router
-State / UI	React Components & Hooks
-Storage	Browser localStorage
-Deployment	Vercel
-📁 Project Structure
+---
+
+## 🛠️ Tech Stack
+
+| **Layer** | **Technology** |
+|---|---|
+| **Frontend** | React 19 |
+| **Build Tool** | Vite |
+| **Language** | JavaScript |
+| **Styling** | CSS |
+| **Icons** | Lucide React |
+| **Weather API** | OpenWeather API |
+| **Maps** | Google Maps JavaScript API |
+| **Routing** | React Router |
+| **State / UI** | React Components & Hooks |
+| **Storage** | Browser localStorage |
+| **Deployment** | Vercel |
+
+---
+
+## 📁 Project Structure
+
+```text
 Weather-app/
 ├── public/
 ├── src/
@@ -164,70 +182,108 @@ Weather-app/
 ├── package.json
 ├── vite.config.js
 └── README.md
+```
 
-The project uses a component-based React architecture to keep the weather interface modular and maintainable.
+> The project uses a component-based React architecture to keep the weather interface modular and maintainable.
 
-⚙️ Installation & Setup
-1. Clone the repository
+---
+
+## ⚙️ Installation & Setup
+
+### 1. Clone the repository
+
+```bash
 git clone https://github.com/OmNalawade/weather-app.git
-2. Navigate to the project
+```
+
+### 2. Navigate to the project
+
+```bash
 cd weather-app
-3. Install dependencies
+```
+
+### 3. Install dependencies
+
+```bash
 npm install
-4. Configure environment variables
+```
 
-Create a .env file in the project root:
+### 4. Configure environment variables
 
+Create a `.env` file in the project root:
+
+```env
 VITE_OPENWEATHER_API_KEY=your_openweather_api_key
 VITE_GOOGLE_MAPS_API_KEY=your_google_maps_api_key
+```
 
-⚠️ Never commit your real API keys to GitHub.
+> ⚠️ Never commit your real API keys to GitHub.
 
-5. Start the development server
+### 5. Start the development server
+
+```bash
 npm run dev
+```
 
-The terminal will provide the local development URL.
+---
 
-🏗️ Production Build
+## 🏗️ Production Build
 
 Create an optimized production build:
 
+```bash
 npm run build
+```
 
 Preview the production build locally:
 
+```bash
 npm run preview
+```
 
 Run the project's lint checks:
 
+```bash
 npm run lint
-🔐 API Configuration
-OpenWeather API
+```
+
+---
+
+## 🔐 API Configuration
+
+### OpenWeather API
 
 Atmos uses OpenWeather for live weather information.
 
-The API key is provided through:
-
+```env
 VITE_OPENWEATHER_API_KEY=your_openweather_api_key
-Google Maps API
+```
+
+### Google Maps API
 
 Google Maps is configured through:
 
+```env
 VITE_GOOGLE_MAPS_API_KEY=your_google_maps_api_key
+```
 
 API keys should be appropriately restricted and should never be committed directly to the repository.
 
-🚀 Deployment
+---
 
-Atmos is deployed using Vercel.
+## 🚀 Deployment
 
-🌐 Live Application
+Atmos is deployed using **Vercel**.
 
-https://weather-app-sigma-eight-44.vercel.app/
+### 🌐 Live Application
+
+**https://weather-app-sigma-eight-44.vercel.app/**
 
 The deployed application is accessible from both desktop and mobile browsers.
 
-Deployment Workflow
+### Deployment Workflow
+
+```text
 React Application
        ↓
     GitHub
@@ -237,53 +293,63 @@ React Application
  Production Build
        ↓
  Live Atmos Application
-🎯 Project Objective
+```
+
+---
+
+## 🎯 Project Objective
 
 Atmos was developed to build a complete modern weather experience while applying practical frontend development concepts.
 
 The project demonstrates:
 
-React component architecture
-Real-world API integration
-Responsive web design
-Browser geolocation
-Interactive map integration
-Weather data visualization
-Dynamic weather conditions
-Theme persistence
-Client-side routing
-Production deployment
+- React component architecture
+- Real-world API integration
+- Responsive web design
+- Browser geolocation
+- Interactive map integration
+- Weather data visualization
+- Dynamic weather conditions
+- Theme persistence
+- Client-side routing
+- Production deployment
 
 The goal was to combine a polished user interface with real-time external data and location-based functionality.
 
-🔮 Future Improvements
+---
+
+## 🔮 Future Improvements
 
 Planned improvements include:
 
-🔐 User authentication
-👤 User profiles
-⭐ Favorite cities
-💾 Saved locations
-🕐 Live date & time
-🔔 Weather alerts
-📊 Advanced weather analytics
-🌍 Additional weather information
-📍 Improved location management
-🎨 Further UI and accessibility improvements
-👨‍💻 Author
+- 🔐 User authentication
+- 👤 User profiles
+- ⭐ Favorite cities
+- 💾 Saved locations
+- 🕐 Live date & time
+- 🔔 Weather alerts
+- 📊 Advanced weather analytics
+- 🌍 Additional weather information
+- 📍 Improved location management
+- 🎨 Further UI and accessibility improvements
 
-Om Nalawade
+---
+
+## 👨‍💻 Author
+
+**Om Nalawade**
 
 Computer Science & Engineering Student
 
-🔗 GitHub:
+🔗 **GitHub:**  
 https://github.com/OmNalawade
 
-📄 License
+---
+
+## 📄 License
 
 This project is created for learning, development, and portfolio purposes.
 
-Built with React · OpenWeather · Google Maps · Vercel · 2026
-weather, themes, responsive UI, and Vercel deployment**.
+---
 
-This version will look much closer to the **RecoverAI-style professional README** you're aiming for.
+*Built with React · OpenWeather · Google Maps · Vercel · 2026*
