@@ -9,6 +9,7 @@ A modern, responsive weather dashboard built with **React and Vite**, providing 
 ## ✨ Features
 
 ### 🌤️ Real-Time Weather
+
 - Live weather data powered by OpenWeather API
 - Current temperature and weather conditions
 - High / low temperature
@@ -19,39 +20,46 @@ A modern, responsive weather dashboard built with **React and Vite**, providing 
 - Dynamic weather icons and day/night conditions
 
 ### 📅 Weather Forecast
+
 - 5-day weather forecast
 - Daily high and low temperatures
 - Weather condition indicators
 - Responsive forecast cards
 
 ### ⏱️ Hourly Forecast
+
 - Hourly weather information
 - Temperature trend visualization
 - Weather condition indicators
 - Interactive temperature graph
 
 ### 🔎 City Search
+
 - Search weather by city
 - City suggestions
 - Fast weather updates
 - Support for multiple cities
 
 ### 📍 Current Location
+
 - Browser geolocation support
 - Automatically fetch weather for the user's current location
 - Graceful location permission handling
 
 ### 🗺️ Interactive Weather Map
+
 - Integrated Google Maps
 - Location-based weather experience
 - Interactive map interface
 
 ### 🌓 Dark & Light Mode
+
 - Modern dark atmospheric theme
 - Clean light theme
 - Theme preference saved using `localStorage`
 
 ### 📱 Responsive Design
+
 Designed to work across:
 
 - 💻 Desktop
@@ -90,7 +98,6 @@ Weather-app/
 │   ├── App.jsx
 │   ├── main.jsx
 │   └── index.css
-├── .env
 ├── package.json
 ├── vite.config.js
 └── README.md
@@ -108,7 +115,7 @@ Create a .env file in the project root:
 VITE_OPENWEATHER_API_KEY=your_openweather_api_key
 VITE_GOOGLE_MAPS_API_KEY=your_google_maps_api_key
 
-Never commit your actual API keys to GitHub.
+⚠️ Never commit your actual API keys to GitHub.
 
 5. Start the development server
 npm run dev
@@ -143,7 +150,7 @@ Weather conditions
 Temperature
 Wind
 Humidity
-Pressure
+Atmospheric pressure
 Google Maps API
 
 Used for:
@@ -160,7 +167,7 @@ Atmos is deployed using Vercel.
 
 Live Application
 
-https://weather-app-sigma-eight-44.vercel.app/
+🔗 https://weather-app-sigma-eight-44.vercel.app/
 
 The application is accessible from both desktop and mobile browsers.
 
@@ -196,20 +203,13 @@ Om Nalawade
 
 Computer Science & Engineering Student
 
-GitHub:
-https://github.com/OmNalawade
+🔗 GitHub: https://github.com/OmNalawade
 
 📄 License
 
 This project is created for learning, development, and portfolio purposes.
 
 
-### One important thing
+> Real weather API integration has NOT been done yet
 
-Your old README has this:
-
-> **Real weather API integration has NOT been done yet**
-
-**Delete that completely.** Your deployed version now uses live OpenWeather data, so leaving that statement would make the project look unfinished.
-
-Also, I would **not add fake screenshots or fake features**. Once we have your actual current project structure,
+Your current project **does use live OpenWeather data**, so that statement is outdated.
