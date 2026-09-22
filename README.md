@@ -1,99 +1,215 @@
-# Modern Weather Dashboard
+# 🌦️ Atmos — Modern Weather Dashboard
 
-A modern, responsive weather dashboard web application built with React, Vite, CSS, and Lucide React icons, designed precisely according to the dark-mode reference visual.
+A modern, responsive weather dashboard built with **React and Vite**, providing real-time weather information, forecasts, hourly temperature trends, city search, geolocation, interactive maps, and theme customization.
 
-## Features
+🔗 **Live Demo:** https://weather-app-sigma-eight-44.vercel.app/
 
-- **Reference-Accurate UI Design**: Centered dark glass dashboard container, smooth borders, and realistic atmospheric illustration (glowing sun, volumetric cloud wisps, and mountain silhouettes).
-- **Current Weather Display**:
-  - Live temperature (`28°C`), condition (`Sunny`), high/low temperatures (`H: 31°`, `L: 21°`).
-  - Refresh button with smooth rotating animation.
-  - Four bottom metrics: Wind speed & direction, Humidity, Atmospheric Pressure, and Feels-like temperature.
-- **5-Day Forecast**: Clean cards showing days, realistic weather icons, high and low temperatures.
-- **Hourly Forecast & Temperature Spline Graph**:
-  - 6 hourly markers (8 AM to 1 PM) with matching weather conditions and temperatures.
-  - Lightweight SVG temperature curve with glowing spline stroke, soft gradient underlay, and glowing vertex nodes.
-- **City Search with Autocomplete**:
-  - Functional city search for Pune, Mumbai, Delhi, Bangalore, Hyderabad, Chennai, Nashik.
-  - Interactive suggestions dropdown with keyboard and click navigation.
-- **Current Location (Geolocation)**:
-  - Browser geolocation integration with graceful error handling and status alerts.
-- **Dark & Light Mode**:
-  - Persistent theme toggle between dark atmospheric mode and light slate mode.
-  - Persisted across reloads in `localStorage`.
-- **Loading & Error States**:
-  - Shimmering skeleton cards during asynchronous loading.
-  - Professional error state card with "Try Again" and default city recovery.
-- **Responsive Architecture**:
-  - Optimized for desktop, laptops, tablets, and mobile devices without horizontal overflow.
+---
 
-## Tech Stack
+## ✨ Features
 
-- **React 19**
-- **Vite**
-- **JavaScript (ES Modules)**
-- **Vanilla CSS (Variables, Flexbox, CSS Grid, SVG styling)**
-- **Lucide React Icons**
+### 🌤️ Real-Time Weather
+- Live weather data powered by OpenWeather API
+- Current temperature and weather conditions
+- High / low temperature
+- Feels-like temperature
+- Humidity
+- Atmospheric pressure
+- Wind speed and direction
+- Dynamic weather icons and day/night conditions
 
-## Project Structure
+### 📅 Weather Forecast
+- 5-day weather forecast
+- Daily high and low temperatures
+- Weather condition indicators
+- Responsive forecast cards
 
-```
+### ⏱️ Hourly Forecast
+- Hourly weather information
+- Temperature trend visualization
+- Weather condition indicators
+- Interactive temperature graph
+
+### 🔎 City Search
+- Search weather by city
+- City suggestions
+- Fast weather updates
+- Support for multiple cities
+
+### 📍 Current Location
+- Browser geolocation support
+- Automatically fetch weather for the user's current location
+- Graceful location permission handling
+
+### 🗺️ Interactive Weather Map
+- Integrated Google Maps
+- Location-based weather experience
+- Interactive map interface
+
+### 🌓 Dark & Light Mode
+- Modern dark atmospheric theme
+- Clean light theme
+- Theme preference saved using `localStorage`
+
+### 📱 Responsive Design
+Designed to work across:
+
+- 💻 Desktop
+- 💻 Laptop
+- 📱 Mobile
+- 📟 Tablet
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology | Usage |
+|---|---|
+| React | Frontend UI |
+| Vite | Development & build tool |
+| JavaScript | Application logic |
+| CSS | Responsive styling |
+| Lucide React | UI icons |
+| OpenWeather API | Real-time weather data |
+| Google Maps API | Interactive maps |
+| React Router | Page navigation |
+| Vercel | Deployment |
+
+---
+
+## 📂 Project Structure
+
+```text
 Weather-app/
 ├── public/
-│   └── favicon.svg
 ├── src/
 │   ├── components/
-│   │   ├── CurrentWeather.jsx
-│   │   ├── ErrorMessage.jsx
-│   │   ├── Forecast.jsx
-│   │   ├── ForecastItem.jsx
-│   │   ├── Header.jsx
-│   │   ├── HourlyForecast.jsx
-│   │   ├── Loading.jsx
-│   │   ├── SearchBar.jsx
-│   │   ├── TemperatureGraph.jsx
-│   │   ├── ThemeToggle.jsx
-│   │   ├── WeatherIcon.jsx
-│   │   ├── WeatherStats.jsx
-│   │   └── WeatherVisual.jsx
-│   ├── data/
-│   │   └── mockWeather.js
+│   ├── pages/
 │   ├── services/
-│   │   └── weatherService.js
+│   ├── assets/
 │   ├── App.jsx
 │   ├── main.jsx
 │   └── index.css
+├── .env
 ├── package.json
-└── vite.config.js
-```
+├── vite.config.js
+└── README.md
+⚙️ Getting Started
+1. Clone the repository
+git clone https://github.com/OmNalawade/weather-app.git
+2. Navigate to the project
+cd weather-app
+3. Install dependencies
+npm install
+4. Configure environment variables
 
-## How to Run
+Create a .env file in the project root:
 
-1. **Install dependencies** (already installed):
-   ```bash
-   npm install
-   ```
+VITE_OPENWEATHER_API_KEY=your_openweather_api_key
+VITE_GOOGLE_MAPS_API_KEY=your_google_maps_api_key
 
-2. **Start development server**:
-   ```bash
-   npm run dev
-   ```
+Never commit your actual API keys to GitHub.
 
-3. **Build for production**:
-   ```bash
-   npm run build
-   ```
+5. Start the development server
+npm run dev
 
-4. **Preview production build**:
-   ```bash
-   npm run preview
-   ```
+Open the local development URL shown in the terminal.
 
-5. **Lint check**:
-   ```bash
-   npm run lint
-   ```
+🏗️ Production Build
 
-## Note on API Integration
+Create a production build:
 
-This phase utilizes the modular mock data service layer (`src/services/weatherService.js`). **Real weather API integration has NOT been done yet**, keeping the project ready for live API keys in the next phase.
+npm run build
+
+Preview the production build:
+
+npm run preview
+
+Run ESLint:
+
+npm run lint
+🔐 API Configuration
+
+Atmos uses external APIs for live weather and map functionality.
+
+OpenWeather API
+
+Used for:
+
+Current weather
+Forecast data
+Hourly weather information
+Weather conditions
+Temperature
+Wind
+Humidity
+Pressure
+Google Maps API
+
+Used for:
+
+Interactive maps
+Location visualization
+Map-based weather experience
+
+API keys should be stored in environment variables and restricted appropriately.
+
+🚀 Deployment
+
+Atmos is deployed using Vercel.
+
+Live Application
+
+https://weather-app-sigma-eight-44.vercel.app/
+
+The application is accessible from both desktop and mobile browsers.
+
+🎯 Project Goals
+
+Atmos was built to create a clean and modern weather experience while practicing:
+
+React development
+API integration
+Responsive UI design
+Component-based architecture
+Geolocation APIs
+Google Maps integration
+Data visualization
+Theme management
+Production deployment
+🔮 Future Improvements
+
+Planned improvements include:
+
+🔐 User authentication
+👤 User profiles
+⭐ Favorite cities
+💾 Saved locations
+🕐 Live date & time
+🔔 Weather alerts
+📊 More weather analytics
+🌍 Additional weather data
+🎨 Further UI improvements
+👨‍💻 Author
+
+Om Nalawade
+
+Computer Science & Engineering Student
+
+GitHub:
+https://github.com/OmNalawade
+
+📄 License
+
+This project is created for learning, development, and portfolio purposes.
+
+
+### One important thing
+
+Your old README has this:
+
+> **Real weather API integration has NOT been done yet**
+
+**Delete that completely.** Your deployed version now uses live OpenWeather data, so leaving that statement would make the project look unfinished.
+
+Also, I would **not add fake screenshots or fake features**. Once we have your actual current project structure,
